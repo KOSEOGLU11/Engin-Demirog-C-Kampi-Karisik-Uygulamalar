@@ -12,18 +12,19 @@ namespace Metodlar
             string acıklama = "Amasya Elması";
 
 
-            string[] meyveler = new string[] { };
+          //  string[] meyveler = new string[] { };
 
             Urun urun1= new Urun();
             urun1.Adi = "elma";
             urun1.Acıklama = "amasya elması";
             urun1.Fiyatı = 15;
 
+           
             Urun urun2 = new Urun();
-
             urun2.Adi = "karpuz";
             urun2.Acıklama = "diyarbakır kapruzu";
             urun2.Fiyatı = 80;
+
 
             Urun[] urunler = new Urun[] { urun1,urun2}; // ürün arrayi oluşturduk.
 
@@ -41,6 +42,7 @@ namespace Metodlar
             SepetManager sepetManager = new SepetManager();
             sepetManager.Ekle(urun1);
             sepetManager.Ekle(urun2);
+
 
             sepetManager.Ekle2("armut", "yeşil armut", 15,10);
             sepetManager.Ekle2("erik", "yeşil erik", 10,9);
